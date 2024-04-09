@@ -1,20 +1,16 @@
-package editor_de_texto;
-
+package Interfaz_grafica;
 import javax.swing.*;
 import javax.swing.event.*;
 import java.awt.*;
 import java.awt.event.*;
-import java.util.ArrayList;
 
-public class creacion_y_almacenamiento extends JFrame {
+public class Barra_desplazamiento extends JFrame {
     private JDesktopPane desktopPane;
     private JLabel labelX;
     private JLabel labelY;
     private JSlider slider;
-    private JTextField emailField;
-    private ArrayList<ArrayList<Point>> lines = new ArrayList<>();
 
-    public creacion_y_almacenamiento() {
+    public Barra_desplazamiento() {
         setTitle("Editor de Texto");
         setSize(500, 500);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
@@ -72,73 +68,20 @@ public class creacion_y_almacenamiento extends JFrame {
         // Crear el JSlider
         slider = new JSlider(JSlider.VERTICAL, 0, 100, 0);
 
-        // Crear el JTextField y agregar un DocumentListener
-        emailField = new JTextField(20);
-        emailField.getDocument().addDocumentListener(new DocumentListener() {
-            @Override
-            public void insertUpdate(DocumentEvent e) {
-                validateEmail();
-            }
-
-            @Override
-            public void removeUpdate(DocumentEvent e) {
-                validateEmail();
-            }
-
-            @Override
-            public void changedUpdate(DocumentEvent e) {
-                validateEmail();
-            }
-
-            // Método para validar el correo electrónico
-            private void validateEmail() {
-                String email = emailField.getText();
-                if (email.matches("^[A-Za-z0-9+_.-]+@(.+)$")) {
-                    // Si el correo electrónico es válido, cambiar el color de fondo a verde
-                    emailField.setBackground(Color.GREEN);
-                } else {
-                    // Si el correo electrónico no es válido, cambiar el color de fondo a rojo
-                    emailField.setBackground(Color.RED);
-                }
-            }
-        });
-
+        // Agregar el botón, las etiquetas y el JSlider al JFrame
         JPanel buttonPanel = new JPanel();
         buttonPanel.add(newWindowButton);
         buttonPanel.add(labelX);
         buttonPanel.add(labelY);
         buttonPanel.add(slider);
-        buttonPanel.add(emailField);
         add(buttonPanel, BorderLayout.SOUTH);
-
-        // Agregar un MouseAdapter para la herramienta de dibujo
-        MouseAdapter mouseAdapter = new MouseAdapter() {
-            private ArrayList<Point> currentLine;
-
-            @Override
-            public void mousePressed(MouseEvent e) {
-                currentLine = new ArrayList<>();
-                currentLine.add(e.getPoint());
-                lines.add(currentLine);
-            }
-
-            @Override
-            public void mouseDragged(MouseEvent e) {
-                currentLine.add(e.getPoint());
-                repaint();
-            }
-        };
-
-        desktopPane.addMouseListener(mouseAdapter);
-        desktopPane.addMouseMotionListener(mouseAdapter);
     }
-
 
     public static void main(String[] args) {
         SwingUtilities.invokeLater(new Runnable() {
             @Override
             public void run() {
-                new creacion_y_almacenamiento().setVisible(true);
+                new Barra_desplazamiento().setVisible(true);
             }
         });
     }

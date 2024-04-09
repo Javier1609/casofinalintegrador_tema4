@@ -4,11 +4,33 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a792ab25-16f3-4e3b-868e-b7ab638dbe73" name="Changes" comment="" />
+    <list default="true" id="a792ab25-16f3-4e3b-868e-b7ab638dbe73" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Busqueda_y_gestion/Agenda_de_contactos.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Busqueda_y_gestion/Buscador_de_palabras.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Comparador_y_contador/Analisis_de_texto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Comparador_y_contador/Herramientas_de_creador.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Interfaz_grafica/Barra_desplazamiento.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Interfaz_grafica/Multiplicidad_de_ventanas.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Interfaz_grafica/Seguimiento_del_raton.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Validacion_y_Diseñografico/Herramientas_dibujo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/editor_de_texto/NavegacionListado.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/editor_de_texto/creacion_y_almacenamiento.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/editor_de_texto/creacion_y_almacenamiento.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Main.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -24,10 +46,16 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Application.creacion_y_almacenamiento.executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "git-widget-placeholder": "master",
     "kotlin-language-version-configured": "true",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
     "onboarding.tips.debug.path": "C:/Users/PC/Documents/intel j/casofinalintegrador_tema4/src/main/java/org/example/Main.java",
     "vue.rearranger.settings.migration": "true"
@@ -48,22 +76,11 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1712676720081</updated>
-      <workItem from="1712676721096" duration="4000" />
+      <workItem from="1712676721096" duration="5725000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/org/example/Main.java</url>
-          <line>13</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>

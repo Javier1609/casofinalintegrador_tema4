@@ -1,12 +1,11 @@
-package editor_de_texto;
-
+package Validacion_y_Diseñografico;
 import javax.swing.*;
 import javax.swing.event.*;
 import java.awt.*;
 import java.awt.event.*;
 import java.util.ArrayList;
 
-public class creacion_y_almacenamiento extends JFrame {
+public class Herramientas_dibujo extends JFrame {
     private JDesktopPane desktopPane;
     private JLabel labelX;
     private JLabel labelY;
@@ -14,7 +13,7 @@ public class creacion_y_almacenamiento extends JFrame {
     private JTextField emailField;
     private ArrayList<ArrayList<Point>> lines = new ArrayList<>();
 
-    public creacion_y_almacenamiento() {
+    public Herramientas_dibujo() {
         setTitle("Editor de Texto");
         setSize(500, 500);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
@@ -103,6 +102,7 @@ public class creacion_y_almacenamiento extends JFrame {
             }
         });
 
+        // Agregar el botón, las etiquetas, el JSlider y el JTextField al JFrame
         JPanel buttonPanel = new JPanel();
         buttonPanel.add(newWindowButton);
         buttonPanel.add(labelX);
@@ -138,7 +138,7 @@ public class creacion_y_almacenamiento extends JFrame {
         SwingUtilities.invokeLater(new Runnable() {
             @Override
             public void run() {
-                new creacion_y_almacenamiento().setVisible(true);
+                new Herramientas_dibujo().setVisible(true);
             }
         });
     }
